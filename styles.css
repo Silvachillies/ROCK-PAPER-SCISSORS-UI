@@ -1,0 +1,53 @@
+body {
+  background-color: #ccc;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+.selections {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-top: 7em;
+}
+
+.selection {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 7rem;
+  transition: 100ms;
+}
+
+.selection:hover {
+  transform: scale(2.2);
+}
+
+.results {
+  margin-top: 6rem;
+  font-size: 2rem;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.result-score {
+  margin-left: 0.1rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.result-selection {
+  opacity: 0.5;
+}
+
+.result-selection.winner {
+  opacity: 1;
+  font-size: 1.5rem;
+}
